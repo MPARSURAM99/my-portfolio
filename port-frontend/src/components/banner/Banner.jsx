@@ -5,7 +5,10 @@ import RightBanner from "./RightBanner";
 
 const Banner = () => {
   return (
-    <section id="banner" className="shadow-sm shadow-black">
+    <section
+      id="banner"
+      className="w-full h-auto pt-20 px-10 flex flex-col gap-6 border-b-[1px] border-b-black"
+    >
       <div className="w-full">
         <UpperBanner />
       </div>

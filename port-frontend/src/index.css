@@ -7,10 +7,13 @@
 
 @layer components {
   .bannerIcon {
-    @apply w-16 h-16 bg-black bg-opacity-30 text-lightText text-xl inline-flex items-center justify-center rounded-md shadow-shadowOne hover:bg-opacity-40 hover:-translate-y-1 transition-all border-[1px] border-transparent hover:text-highlightText hover:border-highlightText cursor-pointer duration-300;
+    @apply w-8 h-8 inline-flex items-center justify-center shadow-shadowTwo hover:-translate-y-1 transition-all cursor-pointer duration-300;
   }
   .resumeLi {
-    @apply w-full h-20 bg-black bg-opacity-25 text-xl text-gray-300 flex justify-center cursor-pointer hover:bg-opacity-40 duration-300 items-center border-[1px] rounded-none;
+    @apply w-full h-20 bg-bodyColor font-bold flex justify-center cursor-pointer hover:bg-gradient-to-b hover:from-black hover:to-[#1e2024] transition-all hover:text-highlightText duration-300 items-center border-[1px] border-highlightText rounded-none;
+  }
+  .activeResume {
+    @apply bg-gradient-to-b from-black to-[#1e2024] text-highlightText;
   }
   .bgOpacity {
     @apply bg-black bg-opacity-40;
@@ -25,4 +28,28 @@
 
 .active {
   color: rgb(103 232 249);
+}
+
+/* Scrollbar customization */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 2px; /* Set the scrollbar width */
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: transparent; /* Make the scrollbar thumb semi-transparent */
+  border-radius: 50%; /* Add rounded corners to the thumb */
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: transparent; /* Change the thumb color on hover */
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent; /* Make the track transparent */
+}
+
+/* Optional: For better cross-browser compatibility */
+.scrollbar-thin {
+  scrollbar-width: thin; /* Firefox-specific: Makes the scrollbar thin */
+  scrollbar-color: rgb(103 232 249) transparent; /* Thumb and track colors for Firefox */
 }
