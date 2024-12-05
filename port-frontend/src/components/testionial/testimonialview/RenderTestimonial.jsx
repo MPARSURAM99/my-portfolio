@@ -1,23 +1,112 @@
-import React from "react";
+import React, { useState } from "react";
 import Title from "../../titles/Title";
 import Slider from "react-slick";
+import { MdArrowBackIos } from "react-icons/md";
+import { MdArrowForwardIos } from "react-icons/md";
 import TestimonialCard from "./TestimonialCard";
 import testimonialOne from "../../../assets/testimonialOne.png";
 
+const PrevArrow = (props) => {
+  const [clicked, setClicked] = useState(false);
+  const { className, style, onClick } = props;
+
+  const handleClick = () => {
+    setClicked(true);
+    if (onClick) onClick();
+    setTimeout(() => setClicked(false), 200);
+  };
+
+  const arrowStyle = {
+    ...style,
+    display: "block",
+    transition: "color ease",
+    color: clicked ? "rgb(103 232 249)" : "gray",
+  };
+
+  return (
+    <MdArrowBackIos
+      className={`${className}`}
+      style={arrowStyle}
+      onClick={handleClick}
+    />
+  );
+};
+
+const NextArrow = (props) => {
+  const [clicked, setClicked] = useState(false);
+  const { className, style, onClick } = props;
+
+  const handleClick = () => {
+    setClicked(true);
+    if (onClick) onClick();
+    setTimeout(() => setClicked(false), 200);
+  };
+
+  const arrowStyle = {
+    ...style,
+    display: "block",
+    transition: "color ease", // Smooth color transition
+    color: clicked ? "rgb(103 232 249)" : "gray", // Conditional color change
+  };
+  return (
+    <MdArrowForwardIos
+      className={`${className}`}
+      style={arrowStyle}
+      onClick={() => {
+        if (onClick) onClick();
+        handleClick();
+      }}
+    />
+  );
+};
+
 const RenderTestimonial = () => {
-  var settings = {
+  const [dotActive, setDocActive] = useState(0);
+
+  const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    beforeChange: (prev, next) => {
+      setDocActive(next);
+    },
+
+    customPaging: (i) => (
+      <div
+        style={
+          i === dotActive
+            ? {
+                width: "5px",
+                height: "5px",
+                color: "blue",
+                background: "rgb(103 232 249)",
+                borderRadius: "50%",
+                cursor: "pointer",
+                marginTop: "20px",
+              }
+            : {
+                width: "5px",
+                height: "5px",
+                color: "blue",
+                background: "gray",
+                borderRadius: "50%",
+                cursor: "pointer",
+                marginTop: "20px",
+              }
+        }
+      ></div>
+    ),
   };
+
   return (
     <div className="w-full flex flex-col items-center justify-center gap-6">
       <div>
         <Title title={"What client say about me"} />
       </div>
-      <div className="w-full mx-auto">
+      <div className="w-full mx-auto slider-container">
         <Slider {...settings}>
           <div>
             <TestimonialCard

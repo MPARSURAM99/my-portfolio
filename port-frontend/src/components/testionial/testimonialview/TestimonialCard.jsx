@@ -14,17 +14,13 @@ const TestimonialCard = ({
   ratingValue,
   description,
 }) => {
-  const image = () => {
-    if (!src) {
-      if (salutation === "Mr.") {
-        return maleUser;
-      } else if (salutation === "Mrs.") {
-        return femaleUser;
-      }
-    } else {
-      return src;
-    }
-  };
+  const image = !src
+    ? salutation === "Mr."
+      ? maleUser
+      : salutation === "Mrs."
+      ? femaleUser
+      : ""
+    : src;
 
   return (
     <div className="w-full h-auto flex flex-col items-center justify-center">
@@ -38,7 +34,7 @@ const TestimonialCard = ({
           >
             <img
               className={`h-72 rounded-lg object-cover `}
-              src={image()}
+              src={image}
               alt="testimonialOne"
             />
           </div>
