@@ -31,6 +31,15 @@ module.exports = {
         shadowOne: "10px 10px 19px #1c1e22, -10px -10px 19px #262a2e",
         shadowTwo: "5px 5px 6px -1px rgba(0, 0, 0, 0.5)",
       },
+      keyframes: {
+        grow: {
+          "0%": { width: "0%", height: "0%" },
+          "100%": { width: "60%", height: "60%" },
+        },
+      },
+      animation: {
+        grow: "grow 1s ease-in-out infinite",
+      },
     },
   },
   plugins: [],

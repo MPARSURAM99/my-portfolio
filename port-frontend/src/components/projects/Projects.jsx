@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "../titles/Title";
+import TitleDesc from "../titles/Title-Desc";
 import ProjectsCard from "./ProjectsCard";
 import projectOne from "../../assets/projectOne.jpg";
 import projectTwo from "../../assets/projectTwo.jpg";
@@ -12,7 +12,7 @@ const Projects = () => {
       className="w-full h-auto py-14 px-10 flex flex-col gap-6 border-b-[1px] border-b-black"
     >
       <div>
-        <Title
+        <TitleDesc
           title={"PROJECTS"}
           description={"Passion Projects That Showcase My Expertise"}
         />

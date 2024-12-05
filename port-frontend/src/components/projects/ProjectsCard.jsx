@@ -28,7 +28,7 @@ const ProjectsCard = ({ title, description, src }) => {
             </div>
           </div>
           <div className="h-32 text-left overflow-y-hidden scrollbar-thin group-hover:overflow-y-auto relative">
-            <p className="text-base">{description}</p>
+            <p className="text-base text-left">{description}</p>
             <div className="absolute bottom-0 left-0 w-full h-14 bg-gradient-to-t from-bodyColor to-transparent pointer-events-none group-hover:hidden"></div>
           </div>
         </div>

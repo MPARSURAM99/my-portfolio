@@ -1,13 +1,19 @@
 import React from "react";
-import CertificationCard from "./CertificationCard";
-import projectOne from "../../assets/projectOne.jpg";
-import ResumeTitle from "./ResumeTitle";
+import CertificationCard from "../certification/CertificationCard";
+import projectOne from "../../../assets/projectOne.jpg";
+import Title from "../../titles/Title";
+import { motion } from "framer-motion";
 
 const Certification = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-6">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="w-full flex flex-col items-center justify-center gap-6"
+    >
       <div>
-        <ResumeTitle title={"My Certification"} />
+        <Title title={"My Certification"} />
       </div>
 
       <div className="grid grid-cols-3 gap-20">
@@ -51,7 +57,7 @@ const Certification = () => {
           src={projectOne}
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

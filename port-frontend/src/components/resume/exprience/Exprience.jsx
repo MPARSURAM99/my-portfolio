@@ -1,16 +1,24 @@
 import React from "react";
-import ResumeTitle from "./ResumeTitle";
-import ExprienceCard from "./Edu-ExpCard";
+import Title from "../../titles/Title";
+import ExprienceCard from "../shared/Edu-ExpCard";
+import { motion } from "framer-motion";
+import projectOne from "../../../assets/projectOne.jpg";
 
 const Exprience = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-6">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="w-full flex flex-col items-center justify-center gap-6"
+    >
       <div>
-        <ResumeTitle title={"My Exprience"} />
+        <Title title={"My Exprience"} />
       </div>
 
-      <div className="flex flex-col gap-10 w-full border-l-[10px] border-l-black border-opacity-3">
+      <div className="flex flex-col gap-10 w-full border-l-[10px] border-l-black border-opacity-30">
         <ExprienceCard
+          src={projectOne}
           instituationName={"Tech Mahindra"}
           city={"Balichandrapur"}
           district={"Jajpur"}
@@ -22,6 +30,7 @@ const Exprience = () => {
         />
 
         <ExprienceCard
+          src={projectOne}
           instituationName={"Tech Mahindra"}
           city={"Balichandrapur"}
           district={"Jajpur"}
@@ -33,6 +42,7 @@ const Exprience = () => {
         />
 
         <ExprienceCard
+          src={projectOne}
           instituationName={"Tech Mahindra"}
           city={"Balichandrapur"}
           district={"Jajpur"}
@@ -44,6 +54,7 @@ const Exprience = () => {
         />
 
         <ExprienceCard
+          src={projectOne}
           instituationName={"Tech Mahindra"}
           city={"Balichandrapur"}
           district={"Jajpur"}
@@ -55,6 +66,7 @@ const Exprience = () => {
         />
 
         <ExprienceCard
+          src={projectOne}
           instituationName={"Tech Mahindra"}
           city={"Balichandrapur"}
           district={"Jajpur"}
@@ -65,7 +77,7 @@ const Exprience = () => {
           passoutDate={""}
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

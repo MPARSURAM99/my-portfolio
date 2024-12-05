@@ -1,7 +1,7 @@
 import React from "react";
-import projectOne from "../../assets/projectOne.jpg";
 
 const EducationCard = ({
+  src,
   instituationName,
   city,
   district,
@@ -17,8 +17,8 @@ const EducationCard = ({
       <div className="w-10 h-[10px] bg-opacity-30 bg-black flex items-center justify-center relative">
         <span className="absolute flex justify-center items-center h-[20px] w-[20px] -left-[15px] rounded-full bg-black bg-opacity-60 border-[1px] border-black">
           <span
-            className={`w-[60%] h-[60%] rounded-full ${
-              passoutDate ? "bg-highlightText" : "bg-transparent"
+            className={`w-[60%] h-[60%] rounded-full transition-all duration-500 ${
+              passoutDate ? "bg-highlightText" : "bg-highlightText animate-grow"
             }`}
           ></span>
         </span>
@@ -29,7 +29,7 @@ const EducationCard = ({
         <div className="flex flex-col items-center justify-center w-1/4 h-[150px] overflow-hidden rounded-lg">
           <img
             className="w-full h-full object-cover group-hover:scale-110 duration-300 cursor-pointer"
-            src={projectOne}
+            src={src}
             alt="src"
           />
         </div>

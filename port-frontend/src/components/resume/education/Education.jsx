@@ -1,16 +1,24 @@
 import React from "react";
-import ResumeTitle from "./ResumeTitle";
-import EducationCard from "./Edu-ExpCard";
+import Title from "../../titles/Title";
+import EducationCard from "../shared/Edu-ExpCard";
+import { motion } from "framer-motion";
+import projectOne from "../../../assets/projectOne.jpg";
 
 const Education = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-6">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="w-full flex flex-col items-center justify-center gap-6"
+    >
       <div>
-        <ResumeTitle title={"My Education"} />
+        <Title title={"My Education"} />
       </div>
 
       <div className="flex flex-col gap-10 w-full border-l-[10px] border-l-black border-opacity-30">
         <EducationCard
+          src={projectOne}
           instituationName={"Saraswati Sishu Vidya Mandir"}
           city={"Balichandrapur"}
           district={"Jajpur"}
@@ -21,6 +29,7 @@ const Education = () => {
           passoutDate={"15-03-2024"}
         />
         <EducationCard
+          src={projectOne}
           instituationName={"Tetra Hedron Junior Science College"}
           city={"Tangi"}
           district={"Cuttack"}
@@ -31,6 +40,7 @@ const Education = () => {
           passoutDate={"15-03-2024"}
         />
         <EducationCard
+          src={projectOne}
           instituationName={"SCB Medical College & Hospital"}
           city={"Cuttack"}
           district={"Cuttack"}
@@ -41,6 +51,7 @@ const Education = () => {
           passoutDate={"15-03-2024"}
         />
         <EducationCard
+          src={projectOne}
           instituationName={"Centurion University of Technology & Management"}
           city={"Bhubaneswar"}
           district={"Khurdha"}
@@ -51,7 +62,7 @@ const Education = () => {
           passoutDate={""}
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

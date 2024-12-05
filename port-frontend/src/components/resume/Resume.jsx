@@ -3,13 +3,13 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 import { IoIosArrowDropupCircle } from "react-icons/io";
 
-import Title from "../titles/Title";
-import Summery from "./Summery";
-import Content from "./Content";
-import Education from "./Education";
-import Skill from "./Skill";
-import Exprience from "./Exprience";
-import Certification from "./Certification";
+import TitleDesc from "../titles/Title-Desc";
+import Summery from "./shared/Summery";
+import Content from "./shared/ResumeContent";
+import Education from "./education/Education";
+import Skill from "./skill/Skill";
+import Exprience from "./exprience/Exprience";
+import Certification from "./certification/Certification";
 
 const Resume = () => {
   const [active, setActive] = useState("education");
@@ -34,7 +34,7 @@ const Resume = () => {
       className="w-full h-auto py-14 px-10 flex flex-col gap-6 border-b-[1px] border-b-black"
     >
       <div>
-        <Title
+        <TitleDesc
           title={"My Resume"}
           description={"Highlights of My Professional Evolution"}
         />

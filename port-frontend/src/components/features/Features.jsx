@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "../titles/Title";
+import TitleDesc from "../titles/Title-Desc";
 import Card from "./FeaturesCard";
 
 const Features = () => {
@@ -8,7 +8,7 @@ const Features = () => {
       id="features"
       className="w-full h-auto py-14 px-10 flex flex-col gap-6 border-b-[1px] border-b-black"
     >
-      <Title title={"Features"} description={"What I Do?"} />
+      <TitleDesc title={"Features"} description={"What I Do?"} />
 
       <div className="grid grid-cols-3 gap-20">
         <Card
