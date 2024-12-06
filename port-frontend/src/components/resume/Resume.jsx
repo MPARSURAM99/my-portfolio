@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-scroll";
-import { IoIosArrowDropupCircle } from "react-icons/io";
+import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 
 import TitleDesc from "../titles/Title-Desc";
 import Summery from "./shared/Summery";
@@ -57,7 +57,7 @@ const Resume = () => {
           offset={-70}
           duration={600}
         >
-          <IoIosArrowDropupCircle className="text-6xl text-lightText cursor-pointer hover:text-highlightText" />
+          <MdKeyboardDoubleArrowUp className="text-xl text-lightText cursor-pointer hover:text-highlightText" />
         </Link>
       </div>
     </section>

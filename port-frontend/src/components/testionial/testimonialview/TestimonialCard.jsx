@@ -25,7 +25,6 @@ const TestimonialCard = ({
   return (
     <div className="w-full h-auto flex flex-col items-center justify-center">
       <div className="w-[95%] flex items-stretch justify-between gap-8 p-4">
-        {/* Left div */}
         <div className="w-[45%] bg-gradient-to-r from-bodyColor to-[#202327] shadow-shadowOne p-5 rounded-xl flex flex-col gap-1 items-center justify-start">
           <div
             className={`w-full h-full flex flex-col items-center rounded-xl ${
