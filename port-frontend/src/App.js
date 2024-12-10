@@ -7,6 +7,9 @@ import Features from "./components/features/Features";
 import Projects from "./components/projects/Projects.jsx";
 import Resume from "./components/resume/Resume.jsx";
 import Testimonial from "./components/testionial/Testimonial.jsx";
+import Contact from "./components/contact/Contact.jsx";
+import Footer from "./components/footer/Footer.jsx";
+import Copyright from "./components/footer/Copyright.jsx";
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
         <Resume />
         <Projects />
         <Testimonial />
+        <Contact />
+        <Footer />
+        <Copyright />
       </div>
     </div>
   );
