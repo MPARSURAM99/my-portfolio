@@ -13,7 +13,7 @@ import Copyright from "./components/footer/Copyright.jsx";
 
 function App() {
   return (
-    <div className="App w-full h-auto bg-bodyColor text-grayText font-bodyFont">
+    <div className="App w-full h-auto bg-bodyColor text-grayText font-bodyFont text-xs mdl:text-base">
       <div className="w-full">
         <Navbar />
         <Banner />

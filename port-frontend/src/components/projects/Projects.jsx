@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="w-full h-auto py-14 px-10 flex flex-col gap-6 border-b-[1px] border-b-black"
+      className="w-full h-auto py-14 px-5 xl:px-10 flex flex-col gap-6 border-b-[1px] border-b-black"
     >
       <div>
         <TitleDesc
@@ -17,7 +17,7 @@ const Projects = () => {
           description={"Passion Projects That Showcase My Expertise"}
         />
       </div>
-      <div className="grid grid-cols-3 gap-20">
+      <div className="grid mdl:grid-cols-2 xl:grid-cols-3 gap-20 mdl:gap-10">
         <ProjectsCard
           title={"Full stack website e-Commerse app"}
           description={

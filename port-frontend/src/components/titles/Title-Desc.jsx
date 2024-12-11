@@ -3,10 +3,10 @@ import React from "react";
 const TitleDesc = ({ title, description }) => {
   return (
     <div className="flex flex-col gap-1 items-start">
-      <h3 className="text-sm uppercase font-light text-highlightText tracking-wide">
+      <h5 className="text-left text-xs mdl:text-sm uppercase text-highlightText tracking-wide">
         {title}
-      </h3>
-      <h1 className="text-lightText text-xl font-titleFont font-bold capitalize">
+      </h5>
+      <h1 className="text-left text-lg mdl:text-3xl text-lightText font-titleFont font-bold">
         {description}
       </h1>
     </div>

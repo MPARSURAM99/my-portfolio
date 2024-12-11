@@ -31,7 +31,7 @@ const Resume = () => {
   return (
     <section
       id="resume"
-      className="w-full h-auto py-14 px-10 flex flex-col gap-6 border-b-[1px] border-b-black"
+      className="w-full h-auto py-14 px-5 xl:px-10 flex flex-col gap-6 border-b-[1px] border-b-black"
     >
       <div>
         <TitleDesc

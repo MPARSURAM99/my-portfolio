@@ -129,7 +129,7 @@ const ContactForm = () => {
         <div className="w-full">
           <button
             onClick={handleSend}
-            className="w-full h-12 bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase hover:text-white duration-300 hover:border-[1px] hover:border-highlightText border-transparent"
+            className="w-full h-12 bg-[#141518] rounded-lg text-base text-highlightText tracking-wider uppercase hover:text-white duration-300 hover:border-[1px] hover:border-highlightText border-transparent"
           >
             Send Message
           </button>

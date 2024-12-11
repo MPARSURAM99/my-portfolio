@@ -6,11 +6,11 @@ const Features = () => {
   return (
     <section
       id="features"
-      className="w-full h-auto py-14 px-10 flex flex-col gap-6 border-b-[1px] border-b-black"
+      className="w-full h-auto py-14 px-5 xl:px-10 flex flex-col gap-6 border-b-[1px] border-b-black"
     >
       <TitleDesc title={"Features"} description={"What I Do?"} />
 
-      <div className="grid grid-cols-3 gap-20">
+      <div className="grid mdl:grid-cols-2 xl:grid-cols-3 gap-20 mdl:gap-10">
         <Card
           title={"Full stack Spring Boot application"}
           description={

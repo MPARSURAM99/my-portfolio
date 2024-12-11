@@ -9,7 +9,7 @@ import twitter from "../../assets/twitterx.svg";
 
 const ContactImage = () => {
   return (
-    <div className="w-full h-full flex-1 flex-col items-center justify-start p-10 bg-gradient-to-r from-bodyColor to-[#202327] shadow-shadowOne rounded-xl">
+    <div className="w-full h-full flex-1 flex-col items-center justify-center lgl:justify-start p-10 bg-gradient-to-r from-bodyColor to-[#202327] shadow-shadowOne rounded-xl">
       <div className="w-full mb-4">
         <img
           src={contactImage}
@@ -19,7 +19,9 @@ const ContactImage = () => {
       </div>
       <div className="w-full flex flex-col gap-6 items-start justify-start">
         <div className="flex flex-col items-start">
-          <h1 className="text-3xl text-lightText">Mr. Parsuram Maharana</h1>
+          <h1 className="text-left text-3xl text-lightText">
+            Mr. Parsuram Maharana
+          </h1>
           <p className="text-highlightText italic">
             Professional Software Engineer
           </p>

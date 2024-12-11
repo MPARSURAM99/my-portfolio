@@ -3,7 +3,7 @@ import React from "react";
 const Content = ({ active, setActive }) => {
   return (
     <div>
-      <ul className="w-full grid grid-cols-4 text-lightText ">
+      <ul className="w-full grid grid-cols-4 text-lightText text-xs mdl:text-base">
         <li
           className={`resumeLi ${active === "education" ? "activeResume" : ""}`}
           onClick={() => setActive("education")}
@@ -14,7 +14,7 @@ const Content = ({ active, setActive }) => {
           className={`resumeLi ${active === "skill" ? "activeResume" : ""}`}
           onClick={() => setActive("skill")}
         >
-          Professional Skill
+          Skill
         </li>
         <li
           className={`resumeLi ${active === "exprience" ? "activeResume" : ""}`}

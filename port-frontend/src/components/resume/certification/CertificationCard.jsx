@@ -14,9 +14,9 @@ const CertificationCard = ({ title, description, src }) => {
       <div className="w-full mt-5 flex flex-col  gap-6">
         <div>
           <div className="flex items-center justify-between">
-            <h3 className="text-base text-left uppercase text-highlightText font-normal">
+            <h2 className="text-sm mdl:text-base text-left uppercase text-highlightText font-normal">
               {title}
-            </h3>
+            </h2>
             <div>
               <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-highlightText duration-300 cursor-pointer">
                 <FaGlobe />
@@ -24,7 +24,7 @@ const CertificationCard = ({ title, description, src }) => {
             </div>
           </div>
           <div className="h-32 text-left overflow-y-hidden scrollbar-thin group-hover:overflow-y-auto relative">
-            <p className="text-base">{description}</p>
+            <p>{description}</p>
             <div className="absolute bottom-0 left-0 w-full h-14 bg-gradient-to-t from-bodyColor to-transparent pointer-events-none group-hover:hidden"></div>
           </div>
         </div>

@@ -16,7 +16,7 @@ const Certification = () => {
         <Title title={"My Certification"} />
       </div>
 
-      <div className="grid grid-cols-3 gap-20">
+      <div className="grid mdl:grid-cols-2 xl:grid-cols-3 gap-10 mdl:gap-10">
         <CertificationCard
           title={"MERN Stack Completion"}
           description={

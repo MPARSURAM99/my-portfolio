@@ -17,11 +17,11 @@ const Card = ({ title, description, icon }) => {
             </>
           )}
         </div>
-        <h2 className="text-lg text-lightText border-b-[1px] border-b-highlightText">
+        <h2 className="text-sm mdl:text-lg text-lightText border-b-[1px] border-b-highlightText">
           {title}
         </h2>
         <div className="h-52 text-left overflow-y-hidden scrollbar-thin group-hover:overflow-y-auto relative">
-          <p className="text-base">{description}</p>
+          <p>{description}</p>
           <div className="absolute bottom-0 left-0 w-full h-14 bg-gradient-to-t from-bodyColor to-transparent pointer-events-none group-hover:hidden"></div>
         </div>
         <div className="text-highlightText text-3xl translate-y-24 group-hover:translate-y-0 transition-transform duration-500">

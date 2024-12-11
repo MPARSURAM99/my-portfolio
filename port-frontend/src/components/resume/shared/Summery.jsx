@@ -3,7 +3,7 @@ import React from "react";
 const Summery = () => {
   return (
     <div className="w-full h-auto">
-      <p>
+      <p className="text-justify">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
         reiciendis exercitationem odit id beatae nobis porro voluptas fugit
         debitis facere. Saepe dicta, quidem deleniti accusantium suscipit,

@@ -23,7 +23,7 @@ const Allrating = () => {
         } w-full flex flex-col items-center justify-center`}
       >
         <div
-          className={` w-full h-auto grid grid-cols-3 gap-20 items-center justify-center`}
+          className={`w-full grid mdl:grid-cols-2 xl:grid-cols-3 gap-20 mdl:gap-10`}
         >
           <div>
             <AllratingCard

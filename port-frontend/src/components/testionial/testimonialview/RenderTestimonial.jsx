@@ -106,10 +106,10 @@ const RenderTestimonial = () => {
 
   return (
     <div className="w-full flex flex-col items-center justify-center gap-6">
-      <div>
+      <div className="xs:hidden lgl:block">
         <Title title={"What client say about me"} />
       </div>
-      <div className="w-full mx-auto slider-container">
+      <div className="w-full mx-auto slider-container xs:hidden lgl:block">
         <Slider {...settings}>
           <div>
             <TestimonialCard
